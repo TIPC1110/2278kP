@@ -1,0 +1,185 @@
+{
+	"clip": {
+		"description": "Plays a clip sound",
+		"usagesReply": "Usage: {prefix}clip <name>",
+		"errorQueue": "Can't play clip because there is an active queue.",
+		"errorNotChannel": "You need to join a voice channel first!"
+	},
+	"clips": {
+		"description": "List all clips"
+	},
+	"Help": {
+		"description": "<:ten:1143135155238739979> Xem tất cả Lệnh \n> **Lệnh**:`[ /help ]`",
+		"embedTitle": "{botname} Help|Yui.s❤️",
+		"embedDescription": "**Danh sách tất cả các lệnh<a:cai:1143135387024367646>**"
+	},
+	"invite": {
+		"description": "<:ten:1143135155238739979>Gửi link bot \n> **Lệnh**:`[ /invite ]`"
+	},
+	"loop": {
+		"description": "<:ten:1143135155238739979>Bật vòng lặp âm nhạc \n> **Lệnh**:`[ /loop ]`",
+		"errorNotQueue": "`Không có bài hát nào`.",
+		"result": "`Vòng lặp đã được bật` {loop}"
+	},
+	"lyrics": {
+		"description": "<:ten:1143135155238739979>Xem lời bài hát đang nghe \n> **Lệnh**:`[ /lyrics ]`",
+		"errorNotQueue": "`Không có bài hát được chạy`.",
+		"lyricsNotFound": " `Không tìm thấy lời ` {title}.",
+		"embedTitle": "{title} - Lyrics"
+	},
+	"move": {
+		"description": "<:ten:1143135155238739979>Di chuyển các bài hát trong hàng đợi \n> **Lệnh**:`[ /move ]`",
+		"errorNotQueue": "`Không có hàng đợi.`",
+		"usagesReply": "Usage: {prefix}move <Queue Number>",
+		"result": "<@{author}> 🚚 movedi chuyển  **{title}** tới {index} trong hàng chờ.",
+		"args": {
+			"movefrom": "Vị trí chuyển từ",
+			"moveto": "Vị trí chuyển tới"
+		}
+	},
+	"nowplaying": {
+		"description": "<:ten:1143135155238739979>Hiển thị bài hát hiện đang phát \n> **Lệnh**:`[ /nowplaying ]`",
+		"errorNotQueue": "`Không có bài hát nào đang nghe`.",
+		"embedTitle": "`Đang nghe bây giờ`",
+		"live": " ◉ LIVE",
+		"timeRemaining": "`Thời gian còn lại`: {time}"
+	},
+	"pause": {
+		"description": "<:ten:1143135155238739979>Dừng lại bài hát đang nghe \n> **Lệnh**:`[ /pause ]`",
+		"errorNotQueue": "`Không có bài hát nào đang nghe.`",
+		"result": "<@{author}> `⏸ Đã tạm dừng bài hát đang nghe.`"
+	},
+	"ping": {
+		"description": "<:ten:1143135155238739979>Hiển thị ping của bot \n> **Lệnh**:`[ /ping ]`",
+		"result": "📈 `Ping trung bình tới API`: {ping} ms"
+	},
+	"play": {
+		"description": "<:ten:1143135155238739979>Chơi bài hát từ youtube \n> **Lệnh**:`[ /play ]`",
+		"errorNotChannel": "You need to join a voice channel first!",
+		"errorNotInSameChannel": "You must be in the same channel as {user}",
+		"usageReply": "Usage: {prefix}play <YouTube URL | Video Name>",
+		"missingPermissionConnect": "Cannot connect to voice channel, missing permissions",
+		"missingPermissionSpeak": "I cannot speak in this voice channel, make sure I have the proper permissions!",
+		"queueAdded": "✅ **{title}** Đã Được thêm vào hàng chờ bởi <@{author}>",
+		"cantJoinChannel": "Could not join the channel: {error}",
+		"queueEnded": "`❌ Bài Hát đã kết thúc`.",
+		"queueError": "Error: {error}",
+		"startedPlaying": "🎶 Bắt Đầu Nghe: **{title}** {url}",
+		"skipSong": "<@{author}> `⏩ Đã chuyển qua bài tiếp theo`",
+		"pauseSong": "<@{author}> `⏸ Đã dừng lại nhạc .`",
+		"resumeSong": "<@{author}> `▶ Đã mở lại`!`",
+		"unmutedSong": "<@{author}> 🔊 `Yay yêu bạn 😍`",
+		"mutedSong": "<@{author}> 🔇 `Ơ kìa sao bạn làm vậy 😢`",
+		"decreasedVolume": "<@{author}> `🔉` Đã giảm âm lượng, âm lượng hiện tại {volume}%`",
+		"increasedVolume": "<@{author}> `🔊 Đã tăng âm lượng, âm lượng hiện tại {volume}%`",
+		"loopSong": "<@{author}> Chơi lại đã được bật {loop}",
+		"stopSong": "<@{author}> `⏹ Tạm dừng nhạc 😑!`",
+		"leaveChannel": "`Bot cô đơn quá rời đây 😢`...",
+		"songNotFound": "Audio Not Found",
+		"songAccessErr": "Video is age restricted, private or unavailable",
+		"errorNoResults": "No results found for {url}",
+		"errorInvalidURL": "Invalid URL, please try a search or youtube url"
+	},
+	"playlist": {
+		"description": "<:ten:1143135155238739979>Chơi một playlist từ youtube \n **Lệnh**:`[ /playlist ]`",
+		"usagesReply": "Usage: {prefix}playlist <YouTube Playlist URL | Playlist Name>",
+		"errorNotChannel": "You need to join a voice channel first!",
+		"errorNotInSameChannel": "You must be in the same channel as {user}",
+		"missingPermissionConnect": "Cannot connect to voice channel, missing permissions",
+		"missingPermissionSpeak": "I cannot speak in this voice channel, make sure I have the proper permissions!",
+		"errorNotFoundPlaylist": "Playlist not found :(",
+		"fetchingPlaylist": "⌛ fetching the playlist...",
+		"playlistCharLimit": "\nPlaylist larger than character limit...",
+		"startedPlaylist": "<@{author}> Started a playlist",
+		"cantJoinChannel": "Could not join the channel: {error}"
+	},
+	"pruning": {
+		"description": "<:ten:1143135155238739979>Chuyển đổi cắt tỉa tin nhắn bot \n> **Lệnh**:`[ /pruning ]`",
+		"errorWritingFile": "There was an error writing to the file.",
+		"result": "Message pruning is {result}"
+	},
+	"queue": {
+		"description": "<:ten:1143135155238739979>Hiển thị hàng đợi nhạc và hiện đang phát.\n> **Lệnh**:`[ /queue ]`",
+		"missingPermissionMessage": "Missing permission to manage messages or add reactions",
+		"errorNotQueue": "❌ **Nothing playing in this server**",
+		"currentPage": "Current Page - ",
+		"embedTitle": "Song Queue\n",
+		"embedCurrentSong": "**Current Song - [{title}]({url})**\n\n{info}"
+	},
+	"remove": {
+		"description": "<:ten:1143135155238739979>Xóa bài hát khỏi hàng đợi \n> **Lệnh**:`[ /remove ]`",
+		"errorNotQueue": "There is no queue.",
+		"usageReply": "Usage: {prefix}remove <Queue Number>",
+		"result": "<@{author}> ❌ removed **{title}** from the queue."
+	},
+	"resume": {
+		"description": "<:ten:1143135155238739979>Tiếp tục phát nhạc hiện tại \n> **Lệnh**:`[ /resume ]`",
+		"errorNotQueue": "There is nothing playing.",
+		"resultNotPlaying": "<@{author}> ▶ resumed the music!",
+		"errorPlaying": "The queue is not paused."
+	},
+	"search": {
+		"description": "<:ten:1143135155238739979>Tìm kiếm và lựa chọn video để phát \n> **Lệnh**:`[ /search ]`",
+		"usageReply": "Usage: {prefix}{name} <Video Name>",
+		"errorAlreadyCollector": "A message collector is already active in this channel.",
+		"errorNotChannel": "You need to join a voice channel first!",
+		"resultEmbedTitle": "**Reply with the song number you want to play**",
+		"resultEmbedDesc": "Results for: {search}",
+		"optionQuery": "Search query",
+		"noResults": "No results for query, please try something else"
+	},
+	"shuffle": {
+		"description": "<:ten:1143135155238739979>Xáo trộn hàng đợi \n> **Lệnh**:`[ /shuffle ]`",
+		"errorNotQueue": "There is no queue.",
+		"result": "<@{author}> 🔀 shuffled the queue"
+	},
+	"skip": {
+		"description": "<:ten:1143135155238739979>Bỏ qua bài hát đang phát \n> **Lệnh**:`[ /skip ]`",
+		"errorNotQueue": "There is nothing playing that I could skip for you.",
+		"result": "<@{author}> ⏭ skipped the song"
+	},
+	"skipto": {
+		"description": "<:ten:1143135155238739979>Chuyển đến số hàng đợi đã chọn \n> **Lệnh**:`[ /skipto ]`",
+		"usageReply": "Usage: {prefix}{name} <Queue Number>",
+		"errorNotQueue": "There is no queue.",
+		"errorNotValid": "The queue is only {length} songs long!",
+		"result": "<@{author}> ⏭ skipped {arg} songs",
+		"args": {
+			"number": "The queue number to skip to"
+		}
+	},
+	"stop": {
+		"description": "<:ten:1143135155238739979>Dừng lại bài hát đang nghe \n> **Lệnh**:`[ /stop ]`",
+		"errorNotQueue": "`Không có bài hát nào đang nghe`.",
+		"result": "<@{author}> `⏹ Đã dừng lại bài hát đang nghe`!"
+	},
+	"volume": {
+		"description": "<:ten:1143135155238739979>Thay đổi âm lượng \n> **Lệnh**:`[ /volume ]`",
+		"errorNotQueue": "`Không có bài hát nào`.",
+		"errorNotChannel": "`Bạn cần vô kênh âm  thanh đầu tiên`",
+		"currentVolume": "`🔊 Âm lượng hiện tại`: **{volume}%**",
+		"errorNotNumber": "`Xin hãy đặt 1 con số để đặt âm lượng`",
+		"errorNotValid": "`Xin hãy sử dụng con số từ 1-100`.",
+		"result": "Âm lượng đã đặt: **{arg}%**"
+	},
+	"common": {
+		"on": "**on**",
+		"off": "**off**",
+		"enabled": "**enabled**",
+		"disabled": "**disabled**",
+		"errorNotChannel": "You need to join a voice channel first!",
+		"cooldownMessage": "please wait {time} more second(s) before reusing the `{name}` command.",
+		"errorCommand": "There was an error executing that command."
+	},
+	"Invite me to your server!": "Invite me to your server!",
+	"Invite": "Invite",
+	"help": {
+		"description": "help.description",
+		"embedTitle": "help.embedTitle",
+		"embedDescription": "help.embedDescription"
+	},
+  "uptime": {
+		"description": "`Đang cập nhật`"
+	}
+}
+	
